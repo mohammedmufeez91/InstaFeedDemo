@@ -1,0 +1,50 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_marginTop="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Like Button with Count -->
+    <ImageView
+        android:id="@+id/likeButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/heart_svgrepo_com"
+        android:layout_marginEnd="4dp"/>
+
+    <TextView
+        android:id="@+id/likeCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1690"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Comment Button with Count -->
+    <ImageView
+        android:id="@+id/commentButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/ic_comment" />
+
+    <TextView
+        android:id="@+id/commentCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="220"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:layout_marginEnd="16dp" />
+
+    <!-- Share Button -->
+    <ImageView
+        android:id="@+id/shareButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/send_svgrepo_com"
+        />
+</LinearLayout>

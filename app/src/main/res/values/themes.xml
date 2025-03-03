@@ -1,0 +1,39 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme with Action Bar -->
+    <style name="Base.Theme.VolindoDemo" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:navigationBarColor">@color/white</item>
+
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#000000</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:statusBarColor">#000000</item>
+
+        <!-- Apply ActionBar customizations -->
+        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
+    </style>
+
+    <!-- ActionBar Custom Style -->
+    <style name="ActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@android:color/transparent</item> <!-- Transparent background -->
+        <item name="android:titleTextAppearance">@style/ActionBarTitleTextAppearance</item>
+    </style>
+
+    <!-- ActionBar Title Text Appearance with Custom Font -->
+    <style name="ActionBarTitleTextAppearance" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">20sp</item> <!-- Adjust the text size -->
+        <item name="android:textColor">@android:color/white</item> <!-- Text color -->
+        <item name="android:fontFamily">@font/moondance</item> <!-- Reference custom font -->
+    </style>
+
+    <style name="Theme.VolindoDemo" parent="Base.Theme.VolindoDemo">
+        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
+    </style>
+</resources>
